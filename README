@@ -1,0 +1,16 @@
+I have a yi sport camera, which is unfortunately out of support,
+the company seems dead at this point,
+the official android app won't install on recent android.
+
+this script simply starts the live stream, no other feature are planned at this point.
+
+usage:
+deno run --allow-net=192.168.42.1:7878 yi.ts
+
+then use your favorite player to play
+rtsp://192.168.42.1/live
+
+note:
+for mpv, you'll need --rtsp-transport=udp (or lavf), since it defaults to tcp
+
+ref: https://github.com/deltaflyer4747/Xiaomi_Yi/blob/master/Standalone_scripts/Camera_video_stream.py
